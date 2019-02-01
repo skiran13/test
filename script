@@ -1,0 +1,8 @@
+-#!/bin/sh      
+ssh chainist@167.99.173.251 <<EOF        
+ cd /var/lib/jenkins/workspace/test  
+ git pull       
+ npm install --production       
+ pm2 restart 8
+ exit       
+EOF
